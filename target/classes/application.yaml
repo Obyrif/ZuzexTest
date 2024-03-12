@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/zuzex
+    username: postgres
+    password: postgre
+
+  liquibase:
+    change-log: db/changelog/db.changelog-master.xml
+
+rsa:
+  private-key: classpath:certs/private.pem
+  public-key: classpath:certs/public.pem
